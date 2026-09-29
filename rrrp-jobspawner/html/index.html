@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Fleet Terminal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app" class="hidden">
+  <div class="terminal">
+
+    <div class="terminal__header">
+      <div class="terminal__heading">
+        <span class="terminal__eyebrow">FLEET TERMINAL</span>
+        <h1 id="locationLabel">Motor Pool</h1>
+      </div>
+      <button id="closeBtn" class="icon-btn" title="Close (ESC)">&times;</button>
+    </div>
+
+    <div class="terminal__body">
+
+      <nav class="rail" id="categoryRail">
+        <!-- category buttons injected here -->
+      </nav>
+
+      <div class="fleet">
+        <div class="fleet__search">
+          <input id="searchInput" type="text" placeholder="Search fleet..." autocomplete="off" />
+        </div>
+        <div class="fleet__grid" id="vehicleGrid">
+          <!-- vehicle cards injected here -->
+        </div>
+      </div>
+
+    </div>
+
+    <div class="terminal__footer">
+      <div class="footer__status" id="statusLine">Select a vehicle to deploy</div>
+      <button id="storeBtn" class="btn btn--ghost">Store Active Vehicle</button>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
